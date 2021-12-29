@@ -18,7 +18,7 @@ def get_items():
     con.close()
     return result
 
-#fenkrnfejn
+
 class Main(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
