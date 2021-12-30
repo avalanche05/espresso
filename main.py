@@ -11,7 +11,7 @@ COLUMNS = ['id', 'title', 'roasting', 'ground', 'description', 'price', 'volume'
 
 
 def add_item(values):
-    con = sqlite3.connect("coffee.sqlite")
+    con = sqlite3.connect("data/coffee.sqlite")
 
     cur = con.cursor()
 
@@ -31,7 +31,7 @@ def add_item(values):
 
 
 def get_items():
-    con = sqlite3.connect("coffee.sqlite")
+    con = sqlite3.connect("data/coffee.sqlite")
 
     cur = con.cursor()
 
@@ -44,7 +44,7 @@ def get_items():
 
 
 def modify_table(id_, column, value):
-    con = sqlite3.connect("coffee.sqlite")
+    con = sqlite3.connect("data/coffee.sqlite")
 
     cur = con.cursor()
 
